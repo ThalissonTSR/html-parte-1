@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="prompt.css" />
+    <script src="rpg 0.6.js" defer></script>
+  </head>
+  <body>
+    <header>
+      
+      <ul>
+        <li data-title="T">T</li>
+        <li data-title="E">E</li>
+        <li data-title="L">L</li>
+        <li data-title="A">A</li>
+        <li data-title=" "> </li>
+        <li data-title="D">D</li>
+        <li data-title="E">E</li>
+        <li data-title=" "> </li>
+        <li data-title="E">E</li>
+        <li data-title="S">S</li>
+        <li data-title="C">C</li>
+        <li data-title="O">O</li>
+        <li data-title="L">L</li>
+        <li data-title="H">H</li>
+        <li data-title="A">A</li>
+        <li data-title="S">S</li>
+    </ul>
+    </header>
+
+    <h2 class="title" >Bem Vindo!!!</h2>
+    <section >
+    <h3>Primeiramente vamos a como funciona essa tela.</h3>
+    
+   
+      <h3>Se for sua primeira vez pode dar uma olhada nas regras clicando no botao ao lado. </h3>
+    <button ><a href="./regras.html">Regras</a></button>
+    
+
+
+    <h3>Aqui voce ira colocar seu nick e escolher seu Heroi.</h3>
+    <h3>Comece Clicando em jogar a moeda para definir quem de voces sera o Jogador 1. (Escolham antes de jogar). </h3>
+  
+
+    <section class="CaraCoroa">
+      
+  
+
+  <button  onclick="JogarMoeda()">JOGAR MOEDA</button>
+
+ <p style="float: left;" id="textoMoeda"></p>
+  
+  <img style="display: none;" id="VideoCara" src="./img/cara.jpg" alt="">
+
+  <img style="display: none;" id="VideoCoroa" src="./img/coroa.jpg" alt="">
+
+</section>
+
+<h3>Legal!!! agora coloquem seus nomes no campo abaixo e clique em enviar.</h3>
+
+</section>     
+    <label for="nome1">jogador1: </label>
+    <input  id="nome1" name="name" type="text" placeholder="Digite seu nome" required>
+    <input  onclick="Pushname1()"  type="submit">
+<br><br> 
+
+    <label for="nome2">jogador2:</label>
+    <input id="nome2" name="name" placeholder="Digite seu nome" type="text" required>
+    <input onclick="Pushname2()"  type="submit">
+    
+<h2  id="Player1"></h2>
+<h2 id="Player2"></h2>
+
+
+    <main class="meio">
+      <section class="mago">
+        <h2>1-MAGO</h2>
+        <img src="./img/mago.gif" alt="" />
+
+        <br><br>  
+        <button class="botao" onclick="P1Mag()">Mago</button>
+      </section>
+
+      <section class="cavaleiro">
+        <h2>2-CAVALEIRO</h2>
+        <img src="./img/cavaleiro.gif" alt="" />
+        <br><br><br>
+        <button onclick="P1Cav()">Cavaleiro</button>
+      </section>
+
+      <section class="joker">
+        <h2>3-JOKER</h2>
+        <img src="./img/Joker.gif" alt="" />   
+        <button style="display: block;" onclick="P1Jok()">Joker</button>
+      </section>
+
+      <section class="healer">
+        <h2>4-HEALER</h2>
+        <img style="width: 220px; height: 150px" src="./img/healer.gif" alt="" />   
+         
+        <br><br><br><br>
+        <button onclick="P1Hel()">Healer</button>
+       
+      </section>
+
+    </main>
+    <br><br><br>
+    <footer>
+    <a href="escolhaP2.html">ESCOLHA P2 CLIQUE AQUI</a>    
+  </footer>
+  </body>
+</html>
