@@ -1,36 +1,57 @@
+@media only screen and (max-width:500px){
+/*acertando divs para melhor visualizacao em mobile*/
+
+header{
+    display: none;
+}
+
+.parteCima{
+    margin-left: 60px;
+}
+
+.bnt{
+    margin-left: 5px;
+}
+
+.meio{
+   flex-direction: column;
+}
+
+footer{
+    margin-left: 70px;
+}
+ 
+
+}
+
+
 @media only screen and (max-width:800px){
 
-/*acertando divs para melhor visualizacao*/
+/*acertando divs para melhor visualizacao em tablet*/
 
     header{
         display: none;
     }
 
+ 
+
     .meio{
-       flex-direction: column
+       flex-direction: column;
+      
     }
 
     .mago h2{
-        margin-left: 60px;
+       margin-left: 50px;
     }
-
+   
     .mago img{
-    
-        width: 300px;
-
-        margin-left: 50px;
-        
+        margin-left: 30px;
     }
 
    .cavaleiro{
     margin-right: 20px;
    }
 
-   
-
-   .joker h2{
-    margin-left: 30px;
-   }
 
    .joker img{
     margin-left: 10px;
@@ -40,9 +61,7 @@
     margin-right: 90px;
    }
 
-   footer{
-    text-align: center
-   }
+  
 
 }
 
