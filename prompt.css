@@ -1,24 +1,29 @@
 @media only screen and (max-width:500px){
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 /*acertando divs para melhor visualizacao em mobile*/
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Permanent Marker", cursive;
+    max-width: 500px;
+}
 
 header{
     display: none;
 }
 
-.parteCima{
-    margin-left: 60px;
-}
-
-.bnt{
-    margin-left: 5px;
-}
-
 .meio{
    flex-direction: column;
+ 
 }
 
+
+
+
 footer{
-    margin-left: 70px;
+    margin-left: 20px;
 }
  
 
@@ -27,7 +32,18 @@ footer{
 
 @media only screen and (max-width:800px){
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 /*acertando divs para melhor visualizacao em tablet*/
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Permanent Marker", cursive;
+    max-width: 700px;
+}
 
     header{
         display: none;
@@ -48,6 +64,7 @@ footer{
         margin-left: 30px;
     }
 
+    
    .cavaleiro{
     margin-right: 20px;
    }
@@ -57,9 +74,7 @@ footer{
     margin-left: 10px;
    }
 
-   .joker button{
-    margin-right: 90px;
-   }
+   
 
   
 
@@ -154,12 +169,13 @@ button:hover{
     margin-left: 60px;
 }
 
-.joker{
-    margin-left: 60px;
+.joker h2{
+    margin-left: 50px;
 }
 
 .joker img{
     width:315px;
+    margin-left: 15px;
 }
 .joker button{
     margin-top: 28px;
