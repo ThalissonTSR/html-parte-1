@@ -186,6 +186,7 @@ button:hover{
     margin-left: 15px;
 }
 .joker button{
+    display: block;
     margin-top: 28px;
     margin-left: 90px;
 }
