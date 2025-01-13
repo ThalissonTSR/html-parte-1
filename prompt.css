@@ -2,10 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 /*acertando divs para melhor visualizacao em mobile*/
 
-body{
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+body{
     font-family: "Permanent Marker", cursive;
     max-width: 500px;
 }
@@ -37,10 +42,13 @@ footer{
 /*acertando divs para melhor visualizacao em tablet*/
 
 
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
     font-family: "Permanent Marker", cursive;
     max-width: 700px;
 }
