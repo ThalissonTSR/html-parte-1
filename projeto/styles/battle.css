@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  overflow: hidden;
+  text-shadow: none;
+  animation: revelar 10s linear forwards;
+
+  justify-content: center;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+
+  background: black;
+  color: rgb(145, 145, 124);
+}
+@keyframes revelar {
+  0% {
+    top: 5%;
+    width: 0px;
+    height: -0px;
+  }
+  30% {
+    width: 100%;
+  }
+  60% {
+    width: 100%;
+  }
+  80% {
+    width: 100%;
+  }
+
+  100% {
+    top: 5%;
+    width: 100%;
+  }
+}
+
+body button {
+  border-radius: 25px;
+  box-shadow: 0 2px 10px rgb(248, 241, 241);
+  width: 200px;
+  background-image: linear-gradient(45deg, rgb(8, 8, 75), red);
+  color: rgb(0, 64, 119);
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+@keyframes pulo {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+button:hover {
+  animation-name: pulo;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.ClickEscolha {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-image: linear-gradient(45deg, blue, red, blue);
+  background-size: 400% 100%;
+  animation: animarTexto 10s linear infinite alternate;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes animarTexto {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.Imagens {
+  position: fixed;
+  top: 10%;
+  width: 50px;
+  -webkit-animation: spin 0.7s linear infinite;
+  -moz-animation: spin 0.7s linear infinite;
+  animation: spin 0.7s linear infinite;
+
+  position: relative;
+  left: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+
+.texto {
+  align-content: center;
+
+  text-align: center;
+}
+.Atbs {
+  display: block;
+  text-align: center;
+}
+.NameBattle {
+  display: flex;
+}
+
+.cartas {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.container,
+.container2,
+.container3,
+.card1,
+.card2,
+.card3,
+.card4 {
+  position: relative;
+  width: 150px;
+  height: 210px;
+}
+
+.container:hover .flip,
+.container2:hover .flip2,
+.container3:hover .flip3,
+.card1:hover .flip4,
+.card2:hover .flip5,
+.card3:hover .flip6,
+.card4:hover .flip7 {
+  transform: rotateY(180deg);
+}
+
+.flip,
+.flip2,
+.flip3,
+.flip4,
+.flip5,
+.flip6,
+.flip7 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: 0.8s;
+}
+
+.frente,
+.verso,
+.frente2,
+.verso2,
+.frente3,
+.verso3,
+.frente4,
+.verso4,
+.frente5,
+.verso5,
+.frente6,
+.verso6,
+.frente7,
+.verso7 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  backface-visibility: hidden;
+}
+.frente {
+  background-image: url(../cards/card\ atk\ verso.png);
+  background-size: cover;
+}
+
+.verso {
+  background-image: url(../cards/card\ atk.png);
+  transform: rotateY(180deg);
+}
+
+.frente2 {
+  background-image: url(../cards/card\ def\ verso.png);
+  background-size: cover;
+}
+
+.verso2 {
+  background-image: url(../cards/card\ def.png);
+  transform: rotateY(180deg);
+}
+
+.frente3 {
+  background-image: url(../cards/buff\ equi\ verso.png);
+  background-size: cover;
+}
+
+.verso3 {
+  background-image: url(../cards/buff\ equi.png);
+  transform: rotateY(180deg);
+}
+
+.frente4 {
+  background-image: url(../cards/buff\ atk\ verso.jpg);
+  background-size: cover;
+}
+
+.verso4 {
+  background-image: url(../cards/buff\ atk.png);
+  transform: rotateY(180deg);
+}
+
+.frente5 {
+  background-image: url(../cards/buff\ defesa\ vers.png);
+  background-size: cover;
+}
+
+.verso5 {
+  background-image: url(../cards/Buff\ defesa.png);
+  transform: rotateY(180deg);
+}
+.frente6 {
+  background-image: url(../cards/D20Atk\ verso.png);
+  background-size: cover;
+}
+
+.verso6 {
+  background-image: url(../cards/D20Atk.png);
+  transform: rotateY(180deg);
+}
+.frente7 {
+  background-image: url(../cards/D20Atk\ verso.png);
+  background-size: cover;
+}
+
+.verso7 {
+  background-image: url(../cards/D20Def.png);
+  transform: rotateY(180deg);
+}
+.CardsStart {
+  display: none;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.CardsStart2 {
+  display: none;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.CardsEnd {
+  display: none;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  font-family: "Permanent Marker", cursive;
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%) skew(-25deg);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: 4px solid rgb(0, 0, 0);
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.2);
+}
+ul li {
+  position: relative;
+  list-style: none;
+  width: 90%;
+  height: 80px;
+  background: rgb(23, 2, 63);
+  font-size: 3em;
+  color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 80px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 -1px;
+}
+ul li::before {
+  content: attr(data-title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #262626;
+  animation: animate 2s linear infinite;
+}
+@keyframes animate {
+  0% {
+    top: -100%;
+  }
+  20% {
+    top: 0%;
+    background: transparent;
+    color: rgb(156, 10, 10);
+  }
+  40% {
+    top: 0%;
+    background: #940d0d;
+    color: rgb(38, 16, 160);
+  }
+  60% {
+    top: 0%;
+    background: transparent;
+    color: #790c0c;
+  }
+  80% {
+    top: -20%;
+    background: transparent;
+    color: #2f147a;
+  }
+  100% {
+    top: 100%;
+  }
+}
+ul li:nth-child(1)::before {
+  animation-delay: 0s;
+}
+ul li:nth-child(2)::before {
+  animation-delay: 0.1s;
+}
+ul li:nth-child(3)::before {
+  animation-delay: 0.2s;
+}
+ul li:nth-child(4)::before {
+  animation-delay: 0.3s;
+}
+ul li:nth-child(5)::before {
+  animation-delay: 0.4s;
+}
+ul li:nth-child(6)::before {
+  animation-delay: 0.5s;
+}
+ul li:nth-child(7)::before {
+  animation-delay: 0.6s;
+}
+ul li:nth-child(8)::before {
+  animation-delay: 0.7s;
+}
+ul li:nth-child(9)::before {
+  animation-delay: 0.8s;
+}
+ul li:nth-child(10)::before {
+  animation-delay: 0.9s;
+}
+ul li:nth-child(11)::before {
+  animation-delay: 1s;
+}
+ul li:nth-child(12)::before {
+  animation-delay: 1.1s;
+}
+ul li:nth-child(13)::before {
+  animation-delay: 1.2s;
+}
+ul li:nth-child(14)::before {
+  animation-delay: 1.3s;
+}
+ul li:nth-child(15)::before {
+  animation-delay: 1.4s;
+}

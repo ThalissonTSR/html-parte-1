@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="./styles/praticando.css" />
+    <script src="./scripts/praticando.js" defer></script>
+  </head>
+  <body id="teste" style="color: #3e3d3f">
+    <div class="button">
+      <button
+        onclick="cor()"
+        ondblclick="voltar()"
+        style="color: rgb(217, 255, 0); background: black">
+        Trocar modelo
+      </button>
+    </div>
+    <header>
+      <h1>HERÓIS</h1>
+      <h3>
+        Aqui voce pode dar uma olhada nos Heróis, mais detalhes clicando em <u>
+        Saiba mais</u>.
+      </h3>
+    </header>
+
+    <main class="herois">
+      <div class="mago">
+        <h2 data-text="Mago"><i>Mago</i></h2>
+        <img src="./img/mago.gif" />
+        <br /><br /><br />
+        <h3>ATK=4</h3>
+        <h3>MAX ATK=11*</h3>
+        <h3>DEF=4</h3>
+        <h3>MAX DEF=11*</h3>
+
+        <a href="./mago.html">saiba mais</a>
+      </div>
+
+      <div class="cavaleiro">
+        <h2><i>Cavaleiro</i></h2>
+        <img src="./img/cavaleiro.gif" />
+        <br /><br /><br />
+        <h3>ATK=3</h3>
+        <h3>MAX ATK=10*</h3>
+        <h3>DEF=5</h3>
+        <h3>MAX DEF=12*</h3>
+
+        <a href="./cavaleiro.html">saiba mais</a>
+      </div>
+
+      <div class="joker">
+        <h2><i>Joker</i></h2>
+        <img src="./img/Joker.gif" />
+        <br /><br /><br />
+        <h3>ATK=d10</h3>
+        <h3>MAX ATK=17*</h3>
+        <h3>DEF=4</h3>
+        <h3>MAX DEF=11*</h3>
+
+        <a href="./joker.html">saiba mais</a>
+      </div>
+
+      <div class="healer">
+        <h2><i>Healer</i></h2>
+        <img src="./img/healer.gif" />
+
+        <div class="AtbsHel">
+          <h3>ATK=2</h3>
+          <h3>MAX ATK=9*</h3>
+          <h3>DEF=d10</h3>
+          <h3>MAX DEF=17*</h3>
+        </div>
+        <a href="./healer.html">saiba mais</a>
+      </div>
+    </main>
+
+    <section class="Btn">
+      <h3>Quando estiver pronto clique em Começar.</h3>
+      <a href="./escolhaP1.html">Começar</a>
+    </section>
+
+    <p>*Maximo de Atbs por round,pode variar dependendo da sua estrategia</p>
+  </body>
+</html>

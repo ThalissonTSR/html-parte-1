@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/prompt.css" />
+    <script src="./scripts/rpg 0.6.js"></script>
+  </head>
+  <body>
+    <header style="height: 200px;">
+      <ul>
+        <li data-title="F">F</li>
+        <li data-title="A">A</li>
+        <li data-title="Ç">Ç</li>
+        <li data-title="A">A</li>
+        <li data-title=" "> </li>
+        <li data-title="S">S</li>
+        <li data-title="U">U</li>
+        <li data-title="A">A</li>
+        <li data-title=" "> </li>
+        <li data-title="E">E</li>
+        <li data-title="S">S</li>
+        <li data-title="C">C</li>
+        <li data-title="O">O</li>
+        <li data-title="L">L</li>
+        <li data-title="H">H</li>
+        <li data-title="A">A</li>
+        <li data-title=" "> </li>
+        <li data-title="P2">P2</li>
+       
+    </ul>
+    </header>
+
+    <main >
+      <section class="mago">
+        <h2>1-MAGO</h2>
+        <img src="./img/mago.gif" alt="" />
+        <br><br>
+        <button class="botao" onclick="P2Mag()">Mago</button>
+      </section>
+
+      <section class="cavaleiro">
+        <h2>2-CAVALEIRO</h2>
+        <img src="./img/cavaleiro.gif" alt="" />
+        <br><br><br>
+        <button onclick="P2Cav()">Cavaleiro</button>
+      </section>
+
+      <section class="joker">
+        <h2>3-JOKER</h2>
+        <img src="./img/Joker.gif" alt="" />
+        <button style="display: block;" onclick="P2Jok()">Joker</button>
+      </section>
+
+      <section class="healer">
+        <h2>4-HEALER</h2>
+        <img  style="width: 220px; height: 150px"  src="./img/healer.gif"  alt="" />   
+                
+        <br><br><br><br>
+        <button onclick="P2Hel()">Healer</button>
+      </section>
+
+    
+    </main>
+    <p id ="VerEscolhas"></p>
+    <footer>
+      <a href="./battle2.0.html">Comecar a batalha</a>
+</footer>
+  </body>
+</html>

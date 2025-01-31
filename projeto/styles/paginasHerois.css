@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Pacifico&display=swap');
+
+
+body{font-family: "Lobster Two", sans-serif;
+    color: rgb(126, 117, 115);
+    background: black;
+    text-shadow: 2px 2px 1px rgb(138, 6, 6);
+}
+body img{
+    width: 30%;
+}
+body a{color: rgb(12, 133, 144);
+    text-decoration: none;
+}
+
+
+

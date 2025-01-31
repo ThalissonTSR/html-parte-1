@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Pacifico&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #7e3bc2;
+  background: black;
+  text-shadow: 2px 1px 1px rgb(138, 6, 6);
+}
+
+header {
+  text-align: center;
+}
+
+
+
+main {
+  border-radius: 25px;
+  box-shadow: 0 5px 10px rgb(248, 241, 241);
+  text-align: center;
+  font-family: "Lobster Two", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main img {
+  width: 100%;
+}
+
+.mago {
+  padding: 60px 30px;
+}
+
+.mago img {
+  width: 70%;
+}
+
+.cavaleiro {
+  padding: 50px 50px;
+}
+
+.cavaleiro img {
+  width: 99%;
+}
+
+.joker {
+  padding: 50px 50px;
+}
+
+.joker img {
+  width: 70%;
+}
+
+.healer {
+  padding: 50px 50px;
+}
+
+.healer img {
+  margin-top: 80px;
+  height: 170px;
+  width: 100%;
+}
+
+.healer .AtbsHel {
+  margin-top: 65px;
+}
+
+main a {
+  text-decoration: none;
+  color: aqua;
+}
+
+.Btn {
+  text-align: center;
+  display: block;
+}
+
+.Btn a {
+  text-decoration: none;
+  color: aqua;
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  
+
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .mago, .cavaleiro, .joker, .healer {
+    padding: 20px;
+  }
+
+ 
+
+  .cavaleiro,.healer{
+    margin-top: 50px;
+  }
+
+  .joker{
+    margin-top: 200px;
+  }
+  
+
+  .healer img,.cavaleiro img,.mago img,.joker img {
+    margin-top: 20px;
+    width: 50%;
+    
+  }
+
+  .Btn {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+
+  .mago img, .cavaleiro img, .joker img, .healer img {
+    width: 100%;
+  }
+
+  .healer img {
+    margin-top: 10px;
+  }
+
+  .Btn {
+    margin-top: 10px;
+  }
+}
+

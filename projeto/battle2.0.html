@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/battle.css" />
+    <script src="./scripts/battle.js" defer></script>
+  </head>
+  <body >
+    <header>
+      <ul>
+        <li data-title="H">H</li>
+        <li data-title="O">O</li>
+        <li data-title="R">R</li>
+        <li data-title="A">A</li>
+        <li data-title=" "> </li>
+        <li data-title="D">D</li>
+        <li data-title="A">A</li>
+        <li data-title=" "> </li>
+        <li data-title="B">B</li>
+        <li data-title="A">A</li>
+        <li data-title="T">T</li>
+        <li data-title="A">A</li>
+        <li data-title="L">L</li>
+        <li data-title="H">H</li>
+        <li data-title="A">A</li>
+    </ul>
+    </header>
+    <br><br><br>
+    <p id="Upgrade"></p>
+    <div class="Imagens">
+      <img style="display: none; width: 130px" src="./img/mago.gif" id="Mago"/>
+         
+      <img style="display: none; width: 130px" src="./img/cavaleiro.gif" id="Cavaleiro"/>
+        
+   
+      <img  style="display: none; width: 130px"  src="./img/Joker.gif"   id="Joker"/>
+             
+      <img  style="display: none; width: 130px" src="./img/healer.gif"  id="healer"/>
+             
+    </div>
+
+    <section class="AtbsP1" style="float: left">
+      <img style="width: 200px; display:none" src="./img/mago.gif"  id="imgMago"/>
+      <img style="width: 200px; display:none " src="./img/cavaleiro.gif"  id="imgCav"/>
+      <img style="width: 200px; display:none " src="./img/Joker.gif"  id="imgJok"/>
+      <img style="width: 200px; display:none " src="./img/healer.gif"  id="imgHea"/>
+      <button style="display: block" onclick="AtaqueP1()" id="Atk1"> Ataque P1 </button>
+       
+      <p id="H1"></p>
+      <p id="AtbAtk1"></p>
+      <p id="AtbDef1"></p>
+    </section>
+
+    <section class="AtbsP2" style="float: right">
+      <img style="width: 200px; display:none " src="./img/mago.gif"  id="imgMago2"/>
+      <img style="width: 200px; display:none " src="./img/cavaleiro.gif"  id="imgCav2"/>
+      <img style="width: 250px; display:none " src="./img/Joker.gif"  id="imgJok2"/>
+      <img style="width: 200px; display:none " src="./img/healer.gif"  id="imgHea2"/>
+       
+            
+      <button style="display: block" onclick="AtaqueP2()" id="Atk2"> Ataque P2</button>
+       
+      
+      <p id="H2"></p>
+      <p id="AtbAtk2" ></p>
+      <p id="AtbDef2"></p>
+    </section>
+    <section class="TextoInicioAtk">
+      <br><br><br>
+      <h2 id="TextCombat"></h2>
+    </section>
+
+    <section class="texto" id="texto">
+      <p>𝐅𝐔𝐍𝐂𝐈𝐎𝐍𝐀𝐋𝐈𝐃𝐀𝐃𝐄 𝐃𝐎 𝐒𝐈𝐒𝐓𝐄𝐌𝐀 𝐃𝐄 𝐄𝐒𝐂𝐎𝐋𝐇𝐀 𝐃𝐄 𝐏𝐎𝐍𝐓𝐎𝐒 : 𝐄𝐗𝐈𝐒𝐓𝐄𝐌 𝟑 𝐌𝐎𝐃𝐎𝐒 𝐃𝐄 𝐄𝐒𝐂𝐎𝐋𝐇𝐀𝐒</p>
+      
+
+      <p>𝐄𝐐𝐔𝐈𝐋𝐈𝐁𝐑𝐈𝐎: 𝐀𝐓𝐊=+𝟓 𝐃𝐄𝐅=+𝟓</p>
+      <p>𝐀𝐓𝐀𝐐𝐔𝐄: 𝐀𝐓𝐊=+𝟕 𝐃𝐄𝐅=+𝟑</p>
+      <p>𝐃𝐄𝐅𝐄𝐒𝐀: 𝐀𝐓𝐊=+𝟑 𝐃𝐄𝐅=+𝟕</p>
+      <br /><br />
+      <p>𝐀𝐆𝐎𝐑𝐀 𝐕𝐎𝐂𝐄𝐒 𝐓𝐄𝐑𝐀𝐌 𝐃𝐄 𝐄𝐒𝐂𝐎𝐋𝐇𝐄𝐑 𝐒𝐄𝐔𝐒 𝐌𝐎𝐃𝐎𝐒 𝐃𝐄 𝐉𝐎𝐆𝐎, 𝐂𝐎𝐌𝐄Ç𝐀𝐍𝐃𝐎 𝐏𝐄𝐋𝐎 𝐉𝐎𝐆𝐀𝐃𝐎𝐑 𝟏</p>
+    
+
+      <button onclick="script1()" id="CONTINUAR">CONTINUAR</button>
+      <br /><br />
+    </section>
+    <p id="trocarTexto" class="ClickEscolha">CLIQUE EM SUA ESCOLHA P1</p>
+
+    <main class="cartas">
+      <section class="CardsStart" id="CardsStart">
+        <div onclick="scriptAtk()" class="container">
+          <div class="flip">
+            <div class="verso"></div>
+            <div class="frente"></div>
+          </div>
+        </div>
+
+        <div onclick="scriptDef()" class="container2">
+          <div class="flip2">
+            <div class="verso2"></div>
+            <div class="frente2"></div>
+          </div>
+        </div>
+
+        <div onclick="scriptEqu()" class="container3">
+          <div class="flip3">
+            <div class="verso3"></div>
+            <div class="frente3"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="CardsStart2" id="CardsStart2">
+        <div onclick="scriptAtk2()" class="container">
+          <div class="flip">
+            <div class="verso"></div>
+            <div class="frente"></div>
+          </div>
+        </div>
+
+        <div onclick="scriptDef2()" class="container2">
+          <div class="flip2">
+            <div class="verso2"></div>
+            <div class="frente2"></div>
+          </div>
+        </div>
+
+        <div onclick="scriptEqu2()" class="container3">
+          <div class="flip3">
+            <div class="verso3"></div>
+            <div class="frente3"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="CardsEnd" id="CardsEnd">
+        <div onclick="C1()" class="card1">
+          <div class="flip4">
+            <div class="verso4"></div>
+            <div class="frente4"></div>
+          </div>
+        </div>
+
+        <div onclick="C2()" class="card2">
+          <div class="flip5">
+            <div class="verso5"></div>
+            <div class="frente5"></div>
+          </div>
+        </div>
+
+        <div onclick="C3()" class="card3">
+          <div class="flip6">
+            <div class="verso6"></div>
+            <div class="frente6"></div>
+          </div>
+        </div>
+
+        <div onclick="C4()" class="card4">
+          <div class="flip7">
+            <div class="verso7"></div>
+            <div class="frente7"></div>
+          </div>
+        </div>
+      </section>
+      <section class="CardsEnd" id="CardsEnd2">
+        <div onclick="C1P2()" class="card1">
+          <div class="flip4">
+            <div class="verso4"></div>
+            <div class="frente4"></div>
+          </div>
+        </div>
+
+        <div onclick="C2P2()" class="card2">
+          <div class="flip5">
+            <div class="verso5"></div>
+            <div class="frente5"></div>
+          </div>
+        </div>
+
+        <div onclick="C3P2()" class="card3">
+          <div class="flip6">
+            <div class="verso6"></div>
+            <div class="frente6"></div>
+          </div>
+        </div>
+
+        <div onclick="C4P2()" class="card4">
+          <div class="flip7">
+            <div class="verso7"></div>
+            <div class="frente7"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

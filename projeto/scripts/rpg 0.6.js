@@ -29,16 +29,12 @@ function JogarMoeda() {
   let moeda = parseInt(Math.random() * 2);
 
   if (moeda == 0) {
-    document.getElementById("VideoCara").style.display = "block";
-    document.getElementById("VideoCara").style.alignItems= "center";
-    document.getElementById("VideoCara").style.textAlign= "center";
+    document.getElementById("VideoCara").style.display = "flex";
     document.getElementById("VideoCara").style.width = "200px";
     document.querySelector("#textoMoeda").innerHTML = "CARA";
-    document.getElementById("textoMoeda").style.textAlign= "center";
   } if(moeda == 1) {
     document.getElementById("VideoCoroa").style.display = "block";
     document.getElementById("VideoCoroa").style.width = "200px";
-
     document.querySelector("#textoMoeda").innerHTML = "COROA";
   }
 }
@@ -49,14 +45,15 @@ function Pushname1() {
   
   localStorage.setItem("P1", name1.value);
   name1.value = "";
-  document.querySelector("#Player1").innerHTML = "Agora escolha seu heroi "+localStorage.getItem("P1")
+  document.querySelector("#Player1").innerHTML = "Agora escolha seu herói "+localStorage.getItem("P1")
 }
 let name2 = document.querySelector("#nome2");
 function Pushname2() {
  
   localStorage.setItem("P2", name2.value);
   name2.value = "";
-  document.querySelector("#Player2").innerHTML =  "Depois "+localStorage.getItem("P2")+" Clique em escolha P2"
+  document.querySelector("#Player2").innerHTML =  "Agora "+localStorage.getItem("P2")+" Clique em escolha P2"
+  document.getElementById("Player1").style.display = "none"
 }
 
 // atribuir valor DO HEROI  a P1 (pagina 1)
