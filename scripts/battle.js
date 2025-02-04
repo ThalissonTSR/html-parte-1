@@ -362,6 +362,8 @@ function AtaqueP1(){
         document.querySelector("#TextCombat").innerHTML= "PARABENS "+localStorage.getItem("P1")+" SEU "+escolhaP1+" FOI O VENCEDOR"
         document.getElementById("Mago").style.display= "block" 
         document.getElementById("CardsEnd").style.display= "none"
+        document.getElementById("SecP1").style.display = "none"
+        document.getElementById("SecP2").style.display = "none"
         SumirAtbsDerrota()
         exit(0)
           
@@ -370,6 +372,8 @@ function AtaqueP1(){
         document.querySelector("#TextCombat").innerHTML= "PARABENS "+localStorage.getItem("P1")+" SEU "+escolhaP1+" FOI O VENCEDOR"
         document.getElementById("Cavaleiro").style.display= "block"       
          document.getElementById("CardsEnd").style.display= "none"
+         document.getElementById("SecP1").style.display = "none"
+         document.getElementById("SecP2").style.display = "none"
          SumirAtbsDerrota()
          exit(0)
         }
@@ -377,6 +381,8 @@ function AtaqueP1(){
         document.querySelector("#TextCombat").innerHTML= "PARABENS "+localStorage.getItem("P1")+" SEU "+escolhaP1+" FOI O VENCEDOR"
         document.getElementById("Joker").style.display= "block"       
         document.getElementById("CardsEnd").style.display= "none"
+        document.getElementById("SecP1").style.display = "none"
+        document.getElementById("SecP2").style.display = "none"
         SumirAtbsDerrota()
         exit(0)
         }
@@ -384,6 +390,8 @@ function AtaqueP1(){
         document.querySelector("#TextCombat").innerHTML= "PARABENS "+localStorage.getItem("P1")+" SEU "+escolhaP1+" FOI O VENCEDOR"
         document.getElementById("Healer").style.display= "block"     
         document.getElementById("CardsEnd").style.display= "none"
+        document.getElementById("SecP1").style.display = "none"
+        document.getElementById("SecP2").style.display = "none"
         SumirAtbsDerrota()
         exit(0)
         }
@@ -400,6 +408,8 @@ function AtaqueP2(){
               if(DefP1<=0 && escolhaP2=="Mago"){                              
                 document.querySelector("#TextCombat").innerHTML= "PARABENS "+localStorage.getItem("P2")+" SEU "+escolhaP2+" FOI O VENCEDOR"   
                 document.getElementById("Mago").style.display= "block"
+                document.getElementById("SecP1").style.display = "none"
+                document.getElementById("SecP2").style.display = "none"
                 SumirAtbsDerrota()
                 exit(0)  
 
@@ -408,6 +418,8 @@ function AtaqueP2(){
               if(DefP1<=0 && escolhaP2=="Cavaleiro"){                              
                 document.querySelector("#TextCombat").innerHTML= "PARABENS "+localStorage.getItem("P2")+" SEU "+escolhaP2+" FOI O VENCEDOR"        
                 document.getElementById("Cavaleiro").style.display= "block"
+                document.getElementById("SecP1").style.display = "none"
+                document.getElementById("SecP2").style.display = "none"
                 SumirAtbsDerrota()
                 exit(0)  
               }   
@@ -415,6 +427,8 @@ function AtaqueP2(){
               if(DefP1<=0 && escolhaP2=="Joker"){                              
                 document.querySelector("#TextCombat").innerHTML= "PARABENS "+localStorage.getItem("P2")+" SEU "+escolhaP2+" FOI O VENCEDOR"        
                  document.getElementById("Joker").style.display= "block"
+                 document.getElementById("SecP1").style.display = "none"
+                 document.getElementById("SecP2").style.display = "none"
                  SumirAtbsDerrota()
                 exit(0)  
               }   
@@ -422,6 +436,8 @@ function AtaqueP2(){
               if(DefP1<=0 && escolhaP2=="Healer"){                              
                 document.querySelector("#TextCombat").innerHTML= "PARABENS "+localStorage.getItem("P2")+" SEU "+escolhaP2+" FOI O VENCEDOR"       
                 document.getElementById("healer").style.display= "block"
+                document.getElementById("SecP1").style.display = "none"
+                document.getElementById("SecP2").style.display = "none"
                 SumirAtbsDerrota()
                 exit(0)  
               }   
