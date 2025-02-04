@@ -62,11 +62,17 @@ function Pushname2() {
 function P1Mag() {
   prompt("Voce escolheu mago");
   localStorage.setItem("Heroi", "Mago");
+<<<<<<< Updated upstream
   localStorage.setItem("Atk1", atkMag);
   localStorage.setItem("Def1", defMag);
   document.getElementById("meio").style.display = "none";
   document.querySelector("#Player2").innerHTML =
     "Agora " + localStorage.getItem("P2") + " Clique em escolha P2";
+=======
+  localStorage.setItem("Atk1",atkMag)
+  localStorage.setItem("Def1",defMag)
+  document.getElementById("Player1").style.display = "none"
+>>>>>>> Stashed changes
 }
 function P1Cav() {
   prompt("Voce escolheu cavaleiro");

@@ -92,6 +92,7 @@ main {
   align-items: center;
 }
 
+
 .mago, .joker, .cavaleiro, .healer {
   display: flex;
   flex-direction: column;
@@ -112,9 +113,10 @@ main {
 }
 
 .CaraCoroa {
-  text-align: center;
-  width: 200px;
-  margin-left: 44%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 body button {
