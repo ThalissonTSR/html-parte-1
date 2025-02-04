@@ -74,7 +74,6 @@ button:hover {
   display: flex;
   justify-content: center;
   align-content: center;
- 
   background-image: linear-gradient(45deg, blue, red, blue);
   background-size: 400% 100%;
   animation: animarTexto 10s linear infinite alternate;
