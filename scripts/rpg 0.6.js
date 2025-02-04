@@ -72,6 +72,9 @@ function P1Mag() {
   localStorage.setItem("Atk1",atkMag)
   localStorage.setItem("Def1",defMag)
   document.getElementById("Player1").style.display = "none"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
 function P1Cav() {
